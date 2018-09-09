@@ -8,8 +8,8 @@ class WunderStorage:
         self.access_token = access_token
         self.clientId = clientId
         self.client = self.api.get_client(access_token, clientId)
-        self.cartId = self.getListId("Shopping")
-        self.storageId = self.getListId("Storage")
+        self.cartId = self.getListId("Shopping") #Enter name of your shopping list
+        self.storageId = self.getListId("Storage") #Enter name of your storage list
 
 
     def __call__(self):
